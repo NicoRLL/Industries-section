@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+
+@keyframes wave-slide {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* se mueve medio ancho */
+}
+@keyframes wave-slide-rev {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+@keyframes bob {
+  0%,100% { transform: translateY(0); }
+  50%     { transform: translateY(8px); }
+}
+
+:root{
+  --brand-primary: #033347;
+  --brand-dark:    #0B3A4F;
+  --color-feature-bg: linear-gradient(180deg, var(--brand-primary) 0%, var(--brand-dark) 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
